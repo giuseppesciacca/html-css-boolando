@@ -42,7 +42,7 @@ ul {
     left: 0;
     z-index: 1;
     width: 100%;
-    padding: 1.5rem;
+    padding: 1rem;
     color: white;
 }
 
@@ -128,7 +128,6 @@ ul {
     position: absolute;
     top: 80%;
     left: 0;
-
 }
 
 .model .discount {
@@ -151,6 +150,14 @@ ul {
     font-size: 0.75rem;
 }
 
+.details .object{
+    font-size: 0.85rem;
+}
+
+.details .price{
+    font-size: 0.85rem;
+}
+
 .promo-price {
     color: red;
     font-weight: bold;
@@ -166,7 +173,7 @@ ul {
 #app-footer {
     background-color: #1f1f1f;
     color: white;
-    padding: 2rem 0;
+    padding: 1rem 0;
 }
 
 #app-footer .container {
