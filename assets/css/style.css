@@ -19,7 +19,10 @@ a{
     color: black;
 }
 
-
+.container{
+    width: calc(100% / 12 * 11);
+    margin: auto;
+}
 /* #endregion COMMON and Utilities */
 
 /* #region HEADER */
@@ -27,20 +30,19 @@ a{
     background-color: #fe6800;
     position: fixed;
     width: 100%;
+    padding: 1.5rem;
+    color: white;
+}
+
+#app-header > div.container{
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem 3rem;
-    color: white;
 }
 
 #category >a{
     color: white;
     font-weight: bold;
     padding: 0 0.25rem;
-}
-
-#logo{
-    text-align: center;
 }
 
 #logo >img{
@@ -55,3 +57,5 @@ a{
     padding: 0 0.25rem;
 }
 /* #endregion HEADER */
+
+/* #region MAIN */
