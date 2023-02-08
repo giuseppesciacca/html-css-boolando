@@ -1,0 +1,57 @@
+/* RESET */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* #region COMMON and Utilities */
+body{
+    font-family: "Helvetica Now", Helvetica, Arial, sans-serif;
+}
+
+.d-flex{
+    display: flex;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+}
+
+
+/* #endregion COMMON and Utilities */
+
+/* #region HEADER */
+#app-header{
+    background-color: #fe6800;
+    position: fixed;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.5rem 3rem;
+    color: white;
+}
+
+#category >a{
+    color: white;
+    font-weight: bold;
+    padding: 0 0.25rem;
+}
+
+#logo{
+    text-align: center;
+}
+
+#logo >img{
+    max-height: 25px;
+}
+
+#menu{
+    color: white;
+}
+
+#menu >i{
+    padding: 0 0.25rem;
+}
+/* #endregion HEADER */
