@@ -75,6 +75,7 @@ ul{
 /* #region MAIN */
 .row{
     justify-content: space-between;
+    margin: 2rem 0;
 }
 
 .card{
@@ -102,6 +103,29 @@ ul{
 .card:hover .heart{
     display: block;
     cursor: pointer;
+}
+
+.model .label{
+    position: absolute;
+    top: 80%;
+    left: 0;
+
+}
+
+.model .discount{
+    background-color: red;
+    color: white;
+    font-weight: bold;
+    padding: 0.25rem;
+    display: inline-block;
+}
+
+.model .sostenibility{
+    background-color: green;
+    padding: 0.25rem;
+    color: white;
+    font-weight: bold;
+    display: inline-block;
 }
 
 .details .brand{
