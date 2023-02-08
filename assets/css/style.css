@@ -6,91 +6,94 @@
 }
 
 /* #region COMMON and Utilities */
-body{
+body {
     font-family: "Helvetica Now", Helvetica, Arial, sans-serif;
 }
 
-.d-flex{
+.d-flex {
     display: flex;
 }
 
-.wrap{
+.wrap {
     flex-wrap: wrap;
 }
 
-a{
+a {
     text-decoration: none;
     color: black;
 }
 
-.container{
+.container {
     width: calc(100% / 12 * 9);
     margin: auto;
 }
 
-ul{
+ul {
     list-style: none;
 }
+
 /* #endregion COMMON and Utilities */
 
 /* #region HEADER */
-#app-header{
+#app-header {
     background-color: #fe6800;
-/*     position: fixed;
+    position: fixed;
     top: 0;
-    left: 0; */
+    left: 0;
+    z-index: 1;
     width: 100%;
     padding: 1.5rem;
     color: white;
 }
 
-#app-header > div.container{
+#app-header>div.container {
     justify-content: space-between;
     align-items: center;
 }
 
-#category li{
+#category li {
     font-weight: bold;
     padding: 0 0.25rem;
     display: inline-block;
 }
 
-#category li>a{
+#category li>a {
     color: white;
 }
 
-#logo >img{
+#logo>img {
     max-height: 25px;
 }
 
-#menu{
+#menu {
     color: white;
 }
 
-#menu >i{
+#menu>i {
     padding: 0 0.25rem;
 }
+
 /* #endregion HEADER */
 
 /* #region MAIN */
-.row{
+.row {
     justify-content: space-between;
-    margin: 2rem 0;
+    margin: 3rem 0;
 }
 
-.card{
+.card {
     width: calc(100% / 12 * 4 - 12px);
-    margin-top: 3rem; 
+    margin-top: 3rem;
     position: relative;
 }
 
-.model >img{
+.model>img {
     max-width: 100%;
 }
 
-.model .heart{
+.model .heart {
     position: absolute;
-    top:20px;
+    top: 20px;
     right: 0;
     width: 50px;
     height: 50px;
@@ -100,19 +103,35 @@ ul{
     display: none;
 }
 
-.card:hover .heart{
+.model .pic2 {
+    display: none;
+}
+
+.card:hover .pic1 {
+    display: none;
+}
+
+.card:hover .pic2 {
+    display: inline-block;
+}
+
+.card:hover .heart {
     display: block;
     cursor: pointer;
 }
 
-.model .label{
+.heart:hover {
+    color: red;
+}
+
+.model .label {
     position: absolute;
     top: 80%;
     left: 0;
 
 }
 
-.model .discount{
+.model .discount {
     background-color: red;
     color: white;
     font-weight: bold;
@@ -120,7 +139,7 @@ ul{
     display: inline-block;
 }
 
-.model .sostenibility{
+.model .sostenibility {
     background-color: green;
     padding: 0.25rem;
     color: white;
@@ -128,42 +147,44 @@ ul{
     display: inline-block;
 }
 
-.details .brand{
+.details .brand {
     font-size: 0.75rem;
 }
 
-.promo-price{
+.promo-price {
     color: red;
     font-weight: bold;
 }
 
-.full-price{
+.full-price {
     text-decoration: line-through;
 }
+
 /* #endregion MAIN */
 
 /* #region FOOTER */
-#app-footer{
+#app-footer {
     background-color: #1f1f1f;
     color: white;
     padding: 2rem 0;
 }
 
-#app-footer .container{
+#app-footer .container {
     justify-content: space-between;
 }
 
-#app-footer ul{
+#app-footer ul {
     padding: 0.75rem 0;
 }
 
-#app-footer li, #app-footer li>a{
+#app-footer li,
+#app-footer li>a {
     color: white;
     display: inline;
     padding-right: 0.5rem;
 }
 
-#app-footer li>i{
+#app-footer li>i {
     font-size: 1.25rem;
 }
 
