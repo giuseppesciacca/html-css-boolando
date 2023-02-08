@@ -23,12 +23,18 @@ a{
     width: calc(100% / 12 * 11);
     margin: auto;
 }
+
+ul{
+    list-style: none;
+}
 /* #endregion COMMON and Utilities */
 
 /* #region HEADER */
 #app-header{
     background-color: #fe6800;
-    position: fixed;
+/*     position: fixed;
+    top: 0;
+    left: 0; */
     width: 100%;
     padding: 1.5rem;
     color: white;
@@ -39,10 +45,14 @@ a{
     align-items: center;
 }
 
-#category >a{
-    color: white;
+#category li{
     font-weight: bold;
     padding: 0 0.25rem;
+    display: inline-block;
+}
+
+#category li>a{
+    color: white;
 }
 
 #logo >img{
@@ -59,3 +69,18 @@ a{
 /* #endregion HEADER */
 
 /* #region MAIN */
+.wrap{
+    flex-wrap: wrap;
+}
+
+.debug .card{
+    height: 300px;
+    background-color: red;
+    border: 2px dashed white;
+}
+
+.card{
+    width: calc(100% / 12 * 4);
+}
+
+/* #endregion MAIN */
