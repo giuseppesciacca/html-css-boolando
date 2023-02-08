@@ -14,13 +14,17 @@ body{
     display: flex;
 }
 
+.wrap{
+    flex-wrap: wrap;
+}
+
 a{
     text-decoration: none;
     color: black;
 }
 
 .container{
-    width: calc(100% / 12 * 11);
+    width: calc(100% / 12 * 9);
     margin: auto;
 }
 
@@ -69,18 +73,29 @@ ul{
 /* #endregion HEADER */
 
 /* #region MAIN */
-.wrap{
-    flex-wrap: wrap;
-}
-
-.debug .card{
-    height: 300px;
-    background-color: red;
-    border: 2px dashed white;
+.row{
+    justify-content: space-between;
 }
 
 .card{
-    width: calc(100% / 12 * 4);
+    width: calc(100% / 12 * 4 - 12px);
+    margin-top: 3rem; 
 }
 
+.model >img{
+    max-width: 100%;
+}
+
+.details .brand{
+    font-size: 0.75rem;
+}
+
+.promo-price{
+    color: red;
+    font-weight: bold;
+}
+
+.full-price{
+    text-decoration: line-through;
+}
 /* #endregion MAIN */
