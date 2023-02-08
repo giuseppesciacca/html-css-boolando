@@ -99,3 +99,30 @@ ul{
     text-decoration: line-through;
 }
 /* #endregion MAIN */
+
+/* #region FOOTER */
+#app-footer{
+    background-color: #1f1f1f;
+    color: white;
+    padding: 2rem 0;
+}
+
+#app-footer .container{
+    justify-content: space-between;
+}
+
+#app-footer ul{
+    padding: 0.75rem 0;
+}
+
+#app-footer li, #app-footer li>a{
+    color: white;
+    display: inline;
+    padding-right: 0.5rem;
+}
+
+#app-footer li>i{
+    font-size: 1.25rem;
+}
+
+/* #endregion FOOTER */
