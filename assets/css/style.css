@@ -63,6 +63,7 @@ ul {
 
 #logo>img {
     max-height: 25px;
+    transform: translate(-50%);
 }
 
 #menu {
@@ -150,11 +151,11 @@ ul {
     font-size: 0.75rem;
 }
 
-.details .object{
+.details .object {
     font-size: 0.85rem;
 }
 
-.details .price{
+.details .price {
     font-size: 0.85rem;
 }
 
